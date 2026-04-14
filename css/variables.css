@@ -1,0 +1,108 @@
+/* ==========================================================================
+   DESIGN TOKENS — Standout Sports Editing
+   Derived from consulting.com reference + PRD specifications
+   ========================================================================== */
+
+:root {
+  /* ---- Backgrounds ---- */
+  --bg-black:         #000000;
+  --bg-near-black:    #0F0F0F;
+  --bg-card-solid:    #0D0D0D;
+  --bg-nav:           rgba(15, 15, 15, 0.85);
+  --bg-glass:         rgba(255, 255, 255, 0.07);
+  --bg-glass-hover:   rgba(255, 255, 255, 0.12);
+
+  /* ---- Gold Palette ---- */
+  --gold-light:       #FFD999;
+  --gold-mid:         #FFC766;
+  --gold-primary:     #FFB433;
+  --gold-cream:       #F5D49A;
+  --gold-pale:        #FFEDCF;
+  --gold-gradient:    linear-gradient(290deg, #FFD999 0%, #FFB433 30%, #F5D49A 67%, #FFB433 100%);
+  --gold-text-gradient: linear-gradient(90deg, #FFD999 0%, #FFB433 50%, #FFD999 100%);
+
+  /* ---- Text Colours ---- */
+  --text-white:       #FFFFFF;
+  --text-off-white:   #FAFAFA;
+  --text-light:       #E0E0E0;
+  --text-muted:       #98A1B2;
+  --text-dim:         rgba(255, 255, 255, 0.5);
+
+  /* ---- Borders ---- */
+  --border-glass:     0.5px solid rgba(228, 230, 235, 0.15);
+  --border-card:      1px solid rgb(34, 34, 34);
+  --border-subtle:    1px solid rgba(255, 255, 255, 0.06);
+  --border-gold:      1px solid rgba(255, 180, 51, 0.3);
+
+  /* ---- Shadows ---- */
+  --shadow-card:      16px 24px 20px 8px rgba(0, 0, 0, 0.4);
+  --shadow-avatar:    0px 0.6px 0.6px rgba(0,0,0,0.02),
+                      0px 2.3px 2.3px rgba(0,0,0,0.06),
+                      0px 10px 10px rgba(0,0,0,0.25);
+  --shadow-btn-glow:  0px 1px 9px 0px rgba(255, 217, 153, 0.3);
+
+  /* ---- Radii ---- */
+  --radius-sm:        8px;
+  --radius-md:        12px;
+  --radius-lg:        20px;
+  --radius-pill:      999px;
+  --radius-circle:    100px;
+
+  /* ---- Typography ---- */
+  --font-heading:     'Playfair Display', 'Georgia', serif;
+  --font-body:        'Instrument Sans', 'Inter', -apple-system, sans-serif;
+  --font-display:     'Inter Tight', 'Inter', sans-serif;
+
+  --fs-hero:          clamp(2rem, 3.4vw, 3rem);
+  --fs-h2:            clamp(2rem, 3.5vw, 3rem);
+  --fs-h3:            clamp(1.25rem, 2vw, 1.5rem);
+  --fs-h4:            1.25rem;
+  --fs-body:          1.125rem;
+  --fs-body-sm:       1rem;
+  --fs-eyebrow:       0.875rem;
+  --fs-small:         0.8125rem;
+
+  --fw-light:         300;
+  --fw-regular:       400;
+  --fw-medium:        500;
+  --fw-semibold:      600;
+  --fw-bold:          700;
+
+  --lh-tight:         1.15;
+  --lh-heading:       1.25;
+  --lh-body:          1.6;
+
+  --ls-tight:         -0.03em;
+  --ls-normal:        -0.01em;
+  --ls-eyebrow:       0.12em;
+
+  /* ---- Spacing ---- */
+  --section-pad:      120px;
+  --container-max:    1280px;
+  --container-narrow: 720px;
+  --gap-grid:         32px;
+  --gap-sm:           16px;
+  --gap-md:           24px;
+  --gap-lg:           48px;
+  --gap-xl:           64px;
+
+  /* ---- Blur ---- */
+  --blur-nav:         12px;
+  --blur-glass:       47px;
+  --blur-glow:        10px;
+  --blur-border:      8px;
+
+  /* ---- Transitions ---- */
+  --ease-smooth:      cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-bounce:      cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast:    0.2s;
+  --duration-base:    0.35s;
+  --duration-slow:    0.6s;
+
+  /* ---- Z-Index Scale ---- */
+  --z-base:           1;
+  --z-cards:          10;
+  --z-nav:            1000;
+  --z-mobile-cta:     999;
+  --z-overlay:        1100;
+}

@@ -1,0 +1,270 @@
+/* ==========================================================================
+   RESPONSIVE — Desktop-first breakpoint overrides
+   Breakpoints from PRD:
+     Laptop:  max-width 1439px
+     Tablet:  max-width 1199px
+     Phone:   max-width 809px
+     Small:   max-width 389px
+   ========================================================================== */
+
+/* ==========================================================================
+   LAPTOP — 1200px – 1439px
+   Reduce padding, scale fonts 10-15%
+   ========================================================================== */
+
+@media (max-width: 1439px) {
+  :root {
+    --section-pad: 96px;
+    --fs-hero: clamp(2.4rem, 4.5vw, 3.8rem);
+    --fs-h2: clamp(1.8rem, 3vw, 2.6rem);
+  }
+
+  .container {
+    padding: 0 32px;
+  }
+}
+
+
+/* ==========================================================================
+   TABLET — 810px – 1199px
+   3-col grids → 2-col, third card centres
+   ========================================================================== */
+
+@media (max-width: 1199px) {
+  :root {
+    --section-pad: 80px;
+    --gap-grid: 24px;
+    --gap-xl: 48px;
+  }
+
+  /* Steps: 3-col → 2-col with centred third */
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps-grid > :last-child {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    justify-self: center;
+  }
+
+  /* Testimonials masonry: 3 → 2 columns */
+  .testimonials-grid {
+    column-count: 2;
+  }
+
+  /* Benefits stays 2x2 but tighten padding */
+  .benefits-wrapper {
+    padding: 32px;
+  }
+
+  .benefit-card {
+    padding: 44px 28px;
+  }
+
+  .benefit-card__title {
+    font-size: 1.5rem;
+  }
+
+  /* Package cards tighter */
+  .packages-grid {
+    max-width: 100%;
+  }
+
+  .stats-bar {
+    gap: var(--gap-lg);
+    flex-wrap: wrap;
+  }
+}
+
+
+/* ==========================================================================
+   PHONE — 390px – 809px
+   Single column, hamburger nav, sticky CTA
+   ========================================================================== */
+
+@media (max-width: 809px) {
+  :root {
+    --section-pad: 64px;
+    --fs-hero: clamp(2rem, 6vw, 2.8rem);
+    --fs-h2: clamp(1.6rem, 5vw, 2.2rem);
+    --fs-body: 1rem;
+    --gap-grid: 20px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  /* ---- Nav: show hamburger, hide desktop links/cta ---- */
+  .nav__links,
+  .nav__cta {
+    display: none;
+  }
+
+  .nav__hamburger {
+    display: flex;
+  }
+
+  .nav__inner {
+    height: 60px;
+  }
+
+  /* ---- All grids → single column ---- */
+  .steps-grid,
+  .benefits-grid,
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-grid {
+    column-count: 1;
+  }
+
+  /* Undo the centred-last-child from tablet */
+  .steps-grid > :last-child {
+    max-width: 100%;
+    justify-self: stretch;
+  }
+
+  /* Benefits wrapper: tighter padding on mobile */
+  .benefits-wrapper {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .benefit-card {
+    padding: 40px 24px;
+  }
+
+  .benefit-card__icon svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .benefit-card__title {
+    font-size: 1.375rem;
+  }
+
+  .packages-grid {
+    max-width: 100%;
+  }
+
+  /* ---- Hero ---- */
+  .hero {
+    min-height: auto;
+    padding-top: 110px;
+    padding-bottom: 72px;
+  }
+
+  .hero__content {
+    gap: 20px;
+  }
+
+  .hero__headline br {
+    display: none;
+  }
+
+  .hero__image {
+    width: 360px;
+    max-width: 80vw;
+  }
+
+  /* ---- Stats bar ---- */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    text-align: center;
+  }
+
+  /* ---- Final CTA ---- */
+  .final-cta {
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  /* ---- Footer ---- */
+  .footer__inner {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  /* ---- Sticky mobile CTA ---- */
+  .mobile-cta {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-mobile-cta);
+    padding: 12px 20px;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    background: rgba(0, 0, 0, 0.92);
+    backdrop-filter: blur(var(--blur-nav));
+    -webkit-backdrop-filter: blur(var(--blur-nav));
+    border-top: var(--border-subtle);
+  }
+
+  .mobile-cta .btn-gold {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .mobile-cta .btn-gold__inner {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 24px;
+  }
+
+  /* Add bottom padding to body so footer isn't hidden behind sticky CTA */
+  body {
+    padding-bottom: 72px;
+  }
+}
+
+
+/* ==========================================================================
+   SMALL SCREENS — < 390px
+   Minimal padding, cap headline size
+   ========================================================================== */
+
+@media (max-width: 389px) {
+  :root {
+    --section-pad: 48px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero__image {
+    width: 280px;
+  }
+
+  /* Stats: single column on very small screens */
+  .stats-bar {
+    grid-template-columns: 1fr;
+  }
+
+  /* Disable particle canvases for performance */
+  .hero__particles,
+  .final-cta__particles {
+    display: none;
+  }
+
+  /* Simplify button */
+  .btn-gold--lg .btn-gold__inner {
+    padding: 14px 24px;
+    font-size: 1rem;
+  }
+}

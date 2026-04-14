@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Standout Sports Editing | Professional Highlight Videos for Football Players</title>
+  <meta name="description" content="Professional highlight videos for competitive Australian football players. We turn raw match footage into a tool that opens doors to new opportunities.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Standout Sports Editing">
+  <meta property="og:description" content="Professional highlight videos for competitive Australian football players.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Logo/Circlelogo%20(1).png">
+  <link rel="apple-touch-icon" href="Logo/Circlelogo%20(1).png">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '509986432991824');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=509986432991824&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Fonts: Playfair Display (headings) + Instrument Sans (body) + Inter Tight (display) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter+Tight:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ================================================================
+       NAVIGATION
+       ================================================================ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="#" aria-label="Standout Sports Editing">
+        <img class="nav__logo-img" src="Logo/Circlelogo%20(1).png" alt="Standout Sports Editing" />
+      </a>
+
+      <nav class="nav__links">
+        <a class="nav__link" href="#how-it-works">How It Works</a>
+        <a class="nav__link" href="#packages">Packages</a>
+        <a class="nav__link" href="#social-proof">Results</a>
+        <a class="nav__link" href="#faq">FAQ</a>
+      </nav>
+
+      <a class="btn-gold btn-gold--sm nav__cta" href="#inquiry">
+        <span class="btn-gold__glow-1"></span>
+        <span class="btn-gold__glow-2"></span>
+        <span class="btn-gold__inner">Get Started</span>
+        <span class="btn-gold__border-top"></span>
+        <span class="btn-gold__border-bottom"></span>
+      </a>
+
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile nav panel -->
+    <div class="nav__mobile-panel">
+      <a class="nav__mobile-link" href="#how-it-works">How It Works</a>
+      <a class="nav__mobile-link" href="#packages">Packages</a>
+      <a class="nav__mobile-link" href="#social-proof">Results</a>
+      <a class="nav__mobile-link" href="#faq">FAQ</a>
+      <a class="btn-gold btn-gold--sm" href="#inquiry" style="align-self:flex-start;margin-top:8px">
+        <span class="btn-gold__glow-1"></span>
+        <span class="btn-gold__glow-2"></span>
+        <span class="btn-gold__inner">Get Started</span>
+        <span class="btn-gold__border-top"></span>
+        <span class="btn-gold__border-bottom"></span>
+      </a>
+    </div>
+  </header>
+
+
+  <!-- ================================================================
+       SECTION 1: HERO
+       ================================================================ -->
+  <section class="hero" id="hero">
+    <!-- Stadium atmosphere base (CSS-generated, always present) -->
+    <div class="hero__atmosphere"></div>
+    <!-- Optional photo layer: drop JPG at Images/hero-stadium.jpg -->
+    <div class="hero__bg"></div>
+    <!-- Vignette + darkening for legibility + theme cohesion -->
+    <div class="hero__vignette"></div>
+
+    <!-- Canvas particle dust -->
+    <canvas class="hero__particles" id="hero-particles"></canvas>
+    <div class="noise-overlay"></div>
+
+    <!-- Ambient glow orbs (warm floodlight hint) -->
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+
+    <div class="hero__content container text-center" data-reveal>
+      <!-- Hero composite image with holographic glow -->
+      <div class="hero__image-wrap">
+        <img class="hero__image" src="Images/Hero_%201%20(1).png" alt="Elite youth footballers in action" />
+      </div>
+      <h1 class="hero__headline headline-fade">
+        Your Child Has the Talent.<br>We Make Sure They Get Seen.
+      </h1>
+      <p class="hero__subtext">
+        We create professional highlight videos that put your child's best moments
+        in front of the right coaches, opening doors that a single trial never could.
+      </p>
+      <a class="btn-gold" href="#inquiry">
+        <span class="btn-gold__glow-1"></span>
+        <span class="btn-gold__glow-2"></span>
+        <span class="btn-gold__inner">
+          Get Started
+          <svg class="btn-gold__arrow" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="btn-gold__border-top"></span>
+        <span class="btn-gold__border-bottom"></span>
+      </a>
+      <p class="hero__proof">100% Satisfaction Rate</p>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       SECTION 2: PROBLEM / AGITATION
+       ================================================================ -->
+  <section class="problem" id="problem">
+    <div class="container container--narrow text-center" data-reveal>
+      <span class="eyebrow gold-text">The Problem</span>
+      <h2 class="problem__headline headline-fade">
+        One Trial Isn't Enough to Show What Your Child Can Do
+      </h2>
+      <div class="problem__body">
+        <p>
+          Your child has been training for years. You've driven thousands of kilometres to training,
+          games, and tournaments. You've invested in academies, private coaching, and development programs.
+        </p>
+        <p>
+          But when it comes to getting noticed by the right clubs, everything rides on a single
+          two-hour trial. One match where nerves, form, and luck all have to align perfectly.
+        </p>
+        <p>
+          That's not how it should work. Talent deserves more than one chance to be seen.
+        </p>
+      </div>
+      <div class="problem__pivot">
+        <p>
+          <strong>A professional highlight video changes that.</strong> It gives coaches the full
+          picture. Your child's best moments, on their terms, available any time. Not one trial.
+          A permanent showcase of what they can do.
+        </p>
+      </div>
+      <div class="section-cta" data-reveal>
+        <a class="btn-gold" href="#inquiry">
+          <span class="btn-gold__glow-1"></span>
+          <span class="btn-gold__glow-2"></span>
+          <span class="btn-gold__inner">
+            Get Started
+            <svg class="btn-gold__arrow" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="btn-gold__border-top"></span>
+          <span class="btn-gold__border-bottom"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       SECTION 3: HOW IT WORKS
+       ================================================================ -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container text-center">
+      <div data-reveal>
+        <span class="eyebrow gold-text">How It Works</span>
+        <h2 class="headline-fade">Three Simple Steps</h2>
+        <p class="section-subtitle">From raw footage to a professional highlight video. We handle everything.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="glass-card step-card" data-reveal data-reveal-delay="0">
+          <div class="step-card__number gold-text">01</div>
+          <h3 class="step-card__title">Upload Your Footage</h3>
+          <p class="step-card__desc">
+            Send us your match footage via a secure link. Full games, clips, or a mix, whatever you have.
+          </p>
+        </div>
+
+        <div class="glass-card step-card" data-reveal data-reveal-delay="100">
+          <div class="step-card__number gold-text">02</div>
+          <h3 class="step-card__title">We Find the Best Moments</h3>
+          <p class="step-card__desc">
+            Our editors review every minute, identify standout plays, and build your child's highlight video.
+          </p>
+        </div>
+
+        <div class="glass-card step-card" data-reveal data-reveal-delay="200">
+          <div class="step-card__number gold-text">03</div>
+          <h3 class="step-card__title">Share With Coaches</h3>
+          <p class="step-card__desc">
+            Receive your HD highlight video ready to send to clubs, agents, and coaches anywhere in the world.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-cta" data-reveal>
+        <a class="btn-gold" href="#inquiry">
+          <span class="btn-gold__glow-1"></span>
+          <span class="btn-gold__glow-2"></span>
+          <span class="btn-gold__inner">
+            Get Started
+            <svg class="btn-gold__arrow" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="btn-gold__border-top"></span>
+          <span class="btn-gold__border-bottom"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       SECTION 4: OUTCOMES & BENEFITS (consulting.com 2x2 card grid)
+       ================================================================ -->
+  <section class="benefits" id="benefits">
+    <!-- Particle canvas for ambient dust -->
+    <canvas class="benefits__particles" id="benefits-particles"></canvas>
+    <div class="noise-overlay"></div>
+
+    <div class="container text-center">
+      <div data-reveal>
+        <span class="eyebrow gold-text">Why Standout</span>
+        <h2 class="headline-fade">More Than Just a Video</h2>
+        <p class="section-subtitle">Every highlight video is built to open new opportunities for your child.</p>
+      </div>
+
+      <!-- Outer container card (consulting.com wrapper) -->
+      <div class="benefits-wrapper" data-reveal>
+        <!-- Ambient glow orbs inside wrapper -->
+        <div class="benefits-wrapper__orb benefits-wrapper__orb--1"></div>
+        <div class="benefits-wrapper__orb benefits-wrapper__orb--2"></div>
+        <div class="benefits-wrapper__orb benefits-wrapper__orb--3"></div>
+
+        <div class="benefits-grid">
+          <!-- Card 1: Football Knowledge -->
+          <div class="benefit-card" data-reveal data-reveal-delay="0">
+            <div class="benefit-card__icon">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 52V36L36 18L52 36V52" stroke="url(#bic1)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M36 18V52" stroke="url(#bic1)" stroke-width="3" stroke-linecap="round"/>
+                <path d="M24 44L36 30L48 44" stroke="url(#bic1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+                <defs><linearGradient id="bic1" x1="16" y1="16" x2="56" y2="56"><stop stop-color="#FFD999"/><stop offset="1" stop-color="#FFB433"/></linearGradient></defs>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">Football Knowledge</h3>
+            <p class="benefit-card__desc">
+              We understand the game. We know what coaches
+              look for by position and what moments matter most.
+            </p>
+          </div>
+
+          <!-- Card 2: Open New Doors -->
+          <div class="benefit-card" data-reveal data-reveal-delay="100">
+            <div class="benefit-card__icon">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28 44L44 28" stroke="url(#bic2)" stroke-width="3" stroke-linecap="round"/>
+                <path d="M36 28H44V36" stroke="url(#bic2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="20" y="20" width="32" height="32" rx="4" stroke="url(#bic2)" stroke-width="2.5" opacity="0.4"/>
+                <defs><linearGradient id="bic2" x1="16" y1="16" x2="56" y2="56"><stop stop-color="#FFD999"/><stop offset="1" stop-color="#FFB433"/></linearGradient></defs>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">Open New Doors</h3>
+            <p class="benefit-card__desc">
+              A highlight video works for your child 24/7.
+              Coaches watch on their time, not just at one trial.
+            </p>
+          </div>
+
+          <!-- Card 3: Done For You -->
+          <div class="benefit-card" data-reveal data-reveal-delay="200">
+            <div class="benefit-card__icon">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="36" cy="36" r="16" stroke="url(#bic3)" stroke-width="2.5" opacity="0.4"/>
+                <path d="M28 36L34 42L46 30" stroke="url(#bic3)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs><linearGradient id="bic3" x1="16" y1="16" x2="56" y2="56"><stop stop-color="#FFD999"/><stop offset="1" stop-color="#FFB433"/></linearGradient></defs>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">Done For You</h3>
+            <p class="benefit-card__desc">
+              Send raw game links and we handle everything.
+              You don't need to touch the footage.
+            </p>
+          </div>
+
+          <!-- Card 4: No Limits -->
+          <div class="benefit-card" data-reveal data-reveal-delay="300">
+            <div class="benefit-card__icon">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 48L36 24L48 48" stroke="url(#bic4)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28 40H44" stroke="url(#bic4)" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M36 20V16" stroke="url(#bic4)" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+                <path d="M48 24L51 22" stroke="url(#bic4)" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+                <path d="M24 24L21 22" stroke="url(#bic4)" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+                <defs><linearGradient id="bic4" x1="16" y1="16" x2="56" y2="56"><stop stop-color="#FFD999"/><stop offset="1" stop-color="#FFB433"/></linearGradient></defs>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">No Limits</h3>
+            <p class="benefit-card__desc">
+              Unlimited game submissions. Unlimited revisions.
+              The job isn't done until you're happy.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-cta" data-reveal>
+        <a class="btn-gold" href="#inquiry">
+          <span class="btn-gold__glow-1"></span>
+          <span class="btn-gold__glow-2"></span>
+          <span class="btn-gold__inner">
+            Get Started
+            <svg class="btn-gold__arrow" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="btn-gold__border-top"></span>
+          <span class="btn-gold__border-bottom"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       SECTION 5: PACKAGES
+       ================================================================ -->
+  <section class="packages" id="packages">
+    <div class="container text-center">
+      <div data-reveal>
+        <span class="eyebrow gold-text">Packages</span>
+        <h2 class="headline-fade">Choose Your Package</h2>
+        <p class="section-subtitle">Two options. Both built to showcase your child at their best.</p>
+      </div>
+
+      <div class="packages-grid">
+        <!-- PRO PACKAGE -->
+        <div class="solid-card package-card" data-reveal data-reveal-delay="0">
+          <span class="package-card__badge">Pro</span>
+          <h3 class="package-card__name gold-text">Pro Package</h3>
+          <div class="package-card__price">$250</div>
+          <p class="package-card__price-note">AUD / one-off</p>
+          <p class="package-card__desc">
+            You send us pre-cut clips or an existing video. We turn it into a professional highlight video.
+          </p>
+          <hr class="package-card__divider">
+          <ul class="package-card__features">
+            <li class="package-card__feature">
+              <svg class="package-card__feature-icon" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Submit pre-cut clips or existing video
+            </li>
+            <li class="package-card__feature">
+              <svg class="package-card__feature-icon" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              No limit on number of clips
+            </li>
+            <li class="package-card__feature">
+              <svg class="package-card__feature-icon" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Professional editing and production
+            </li>
+            <li class="package-card__feature">
+              <svg class="package-card__feature-icon" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              2-5 business day turnaround
+            </li>
+            <li class="package-card__feature">
+              <svg class="package-card__feature-icon" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Unlimited revisions
+            </li>
+            <li class="package-card__feature">
+              <svg class="package-card__feature-icon" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              YouTube link + downloadable file
+            </li>
+          </ul>
+          <a class="btn-gold" href="#inquiry">
+            <span class="btn-gold__glow-1"></span>
+            <span class="btn-gold__glow-2"></span>
+            <span class="btn-gold__inner">Get Started</span>
+            <span class="btn-gold__border-top"></span>
+            <span class="btn-gold__border-bottom"></span>
+          </a>
+        </div>
+
+        <!-- ELITE PACKAGE -->
+        <div class="solid-card solid-card--featured package-card" data-reveal data-reveal-delay="100">
+          <span class="package-card__badge">Most Popular</span>
+          <h3 class="package-card__name gold-text">Elite Package</h3>
+          <div class="package-card__price">$550</div>
+          <p class="package-card__price-note">AUD / one-off</p>
+          <p class="package-card__desc">
+            Completely done for you. Send us raw game links and we find your child's best moments.
+          </p>
+          <hr class="package-card__divider">
+          <ul class="package-card__features">
+            <li class="package-card__feature">
+              <svg class="package-card__feature-icon" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Submit raw game links, we do the rest
+            </li>
+            <li class="package-card__feature">
+              <svg class="package-card__feature-icon" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              No limit on number of games
+            </li>
+            <li class="package-card__feature">
+              <svg class="package-card__feature-icon" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              We find the best moments for you
+            </li>
+            <li class="package-card__feature">
+              <svg class="package-card__feature-icon" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Full game analysis by football editors
+            </li>
+            <li class="package-card__feature">
+              <svg class="package-card__feature-icon" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              7-10 business day turnaround
+            </li>
+            <li class="package-card__feature">
+              <svg class="package-card__feature-icon" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Unlimited revisions
+            </li>
+            <li class="package-card__feature">
+              <svg class="package-card__feature-icon" viewBox="0 0 20 20" fill="none"><path d="M5 10L8.5 13.5L15 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              YouTube link + downloadable file
+            </li>
+          </ul>
+          <a class="btn-gold" href="#inquiry">
+            <span class="btn-gold__glow-1"></span>
+            <span class="btn-gold__glow-2"></span>
+            <span class="btn-gold__inner">Get Started</span>
+            <span class="btn-gold__border-top"></span>
+            <span class="btn-gold__border-bottom"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       SECTION 6: SOCIAL PROOF
+       ================================================================ -->
+  <section class="social-proof" id="social-proof">
+    <div class="container">
+      <!-- Testimonials -->
+      <div class="testimonials-section text-center">
+        <div data-reveal>
+          <span class="eyebrow gold-text">Results</span>
+          <h2 class="headline-fade">What Parents Are Saying</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card" data-reveal data-reveal-delay="0">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar">L</div>
+              <h4 class="testimonial-card__name gold-text">Luis</h4>
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "Jordan at Standout Sports Editing has done multiple highlight videos for me, and I've always been more than satisfied with the results. The whole process is very quick, simple, and professional from start to finish. He consistently delivers high-quality work and is a great guy to work with. Highly recommend!"
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card" data-reveal data-reveal-delay="60">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar">T</div>
+              <h4 class="testimonial-card__name gold-text">Tony</h4>
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "What an amazing experience with Jordan from Standout Sports Editing. He has done an incredible job to showcase my son. It is a credit to continue this relationship in the future. Highly recommend and gives you outstanding feedback and support. Thank you again Jordan."
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card" data-reveal data-reveal-delay="120">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar">S</div>
+              <h4 class="testimonial-card__name gold-text">Sharon</h4>
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "Jordan was great to work with. He created a fantastic highlights video for my son. He turned the video around on time and made additional changes after the first draft. I can highly recommend Jordan for video editing."
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card" data-reveal data-reveal-delay="180">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar">D</div>
+              <h4 class="testimonial-card__name gold-text">Dorian</h4>
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "The agency did incredibly fast work for my soccer highlight video. The design and quality is very good. I can only recommend this agency to anyone who needs a sports highlight video. I am very grateful to them. Gladly again!!"
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card" data-reveal data-reveal-delay="0">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar">S</div>
+              <h4 class="testimonial-card__name gold-text">Sal</h4>
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "Jordan was a pleasure to deal with, his professionalism was amazing, and his work for editing highlights is 10/10. Would recommend 100%."
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card" data-reveal data-reveal-delay="60">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar">B</div>
+              <h4 class="testimonial-card__name gold-text">Brett</h4>
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "Highly recommend Jordan and Standout Sports Editing. Quick and professional communication through the process, and a fantastic final product! Much appreciated."
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card" data-reveal data-reveal-delay="120">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar">A</div>
+              <h4 class="testimonial-card__name gold-text">Andy</h4>
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "Jordan turned the video around really quickly and I was very happy with the result. Well worth the money."
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card" data-reveal data-reveal-delay="180">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar">D</div>
+              <h4 class="testimonial-card__name gold-text">Darrel</h4>
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "Great experience with Jordan and the end result is a professional video with an excellent turnaround time. Editing several times was not a problem."
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card" data-reveal data-reveal-delay="0">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar">J</div>
+              <h4 class="testimonial-card__name gold-text">Jeffrey</h4>
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "Great design and quality work from Jordan, easy to deal with and professional. Would definitely recommend Standout Sports Editing."
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card" data-reveal data-reveal-delay="60">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar">S</div>
+              <h4 class="testimonial-card__name gold-text">Sandra</h4>
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "Super easy to deal with. Turnaround was quick, editing was great. A very professional product as well as service."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       SECTION 7: FINAL CTA / FORM
+       ================================================================ -->
+  <section class="final-cta" id="inquiry">
+    <canvas class="final-cta__particles" id="cta-particles"></canvas>
+    <div class="noise-overlay"></div>
+
+    <!-- Ambient glow orbs -->
+    <div class="final-cta__orb final-cta__orb--1"></div>
+    <div class="final-cta__orb final-cta__orb--2"></div>
+
+    <div class="final-cta__content container text-center" data-reveal>
+      <span class="eyebrow gold-text">Get Started</span>
+      <h2 class="final-cta__headline headline-fade">
+        Ready to Open New Opportunities?
+      </h2>
+      <p class="final-cta__subtext">
+        Your child has the talent. Let's make sure the right people see it.
+        Fill out the form below and we'll be in touch within 24 hours.
+      </p>
+
+      <!-- ===== GHL / Optimo embedded form ===== -->
+      <div class="form-embed">
+        <iframe
+          src="https://link.getoptimo.io/widget/form/qEvADiG8sCn352rdkR3V"
+          id="inline-qEvADiG8sCn352rdkR3V"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="SSE Web"
+          data-height="895"
+          data-layout-iframe-id="inline-qEvADiG8sCn352rdkR3V"
+          data-form-id="qEvADiG8sCn352rdkR3V"
+          title="SSE Web">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       SECTION 8: FAQ
+       ================================================================ -->
+  <section class="faq" id="faq">
+    <div class="container container--narrow">
+      <div class="text-center" data-reveal>
+        <span class="eyebrow gold-text">FAQ</span>
+        <h2 class="headline-fade">Common Questions</h2>
+        <p class="section-subtitle">Everything you need to know before getting started.</p>
+      </div>
+
+      <div class="accordion" data-reveal>
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>What's the difference between the Pro and Elite packages?</span>
+            <svg class="accordion__icon" viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="accordion__content" aria-hidden="true">
+            <p>
+              With the <strong>Pro package ($250)</strong>, you send us pre-cut clips or an existing video
+              and we edit it into a professional highlight video. With the <strong>Elite package ($550)</strong>,
+              you send us raw game links and we do everything: watching the footage, finding the best moments,
+              and creating the complete highlight video from scratch. The Elite package is fully done for you.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>What quality does the footage need to be?</span>
+            <svg class="accordion__icon" viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="accordion__content" aria-hidden="true">
+            <p>
+              Phone-quality footage is absolutely fine. Most parents film from the sideline on their phone
+              and that works perfectly. As long as we can see the player and the play clearly, we can work with it.
+              If you're unsure, send us a sample and we'll let you know.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>How long does it take to get the final video?</span>
+            <svg class="accordion__icon" viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="accordion__content" aria-hidden="true">
+            <p>
+              The <strong>Pro package</strong> has a 2 to 5 business day turnaround. The <strong>Elite package</strong>
+              takes 7 to 10 business days because we're reviewing full games. If you have a deadline (upcoming trial,
+              transfer window), let us know and we'll do our best to accommodate.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>Can I request changes after the video is done?</span>
+            <svg class="accordion__icon" viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="accordion__content" aria-hidden="true">
+            <p>
+              Yes, both packages include <strong>unlimited revisions</strong>. We'll keep refining until you're
+              completely happy with the result. There's no cap on changes and no extra charge.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>How do I receive the finished highlight video?</span>
+            <svg class="accordion__icon" viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="accordion__content" aria-hidden="true">
+            <p>
+              You'll receive a <strong>YouTube link</strong> (public or unlisted, your choice) plus a
+              <strong>downloadable HD file</strong> sent via email. This means you can share it with coaches
+              directly, embed it in player profiles, or send it to clubs anywhere in the world.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>Do you only work with football players?</span>
+            <svg class="accordion__icon" viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="accordion__content" aria-hidden="true">
+            <p>
+              Football is our specialty and where we do our best work. We understand the game, the positions,
+              and what coaches are looking for. We occasionally work with other sports, but football is our focus.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>What age range do you work with?</span>
+            <svg class="accordion__icon" viewBox="0 0 20 20" fill="none"><path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="accordion__content" aria-hidden="true">
+            <p>
+              Most of our clients are players aged <strong>14 to 21</strong>. The window where new opportunities
+              open up. Whether they're trialling for higher-tier clubs, aiming for state selection, or exploring
+              overseas pathways, we can help.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://link.getoptimo.io/js/form_embed.js"></script>
+
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <p class="footer__copy">&copy; 2026 Standout Sports Editing. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ================================================================
+       STICKY MOBILE CTA
+       ================================================================ -->
+  <div class="mobile-cta" id="mobile-cta">
+    <a class="btn-gold" href="#inquiry">
+      <span class="btn-gold__glow-1"></span>
+      <span class="btn-gold__glow-2"></span>
+      <span class="btn-gold__inner">Get Started</span>
+      <span class="btn-gold__border-top"></span>
+      <span class="btn-gold__border-bottom"></span>
+    </a>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/scroll-reveal.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/nav.js"></script>
+
+</body>
+</html>
