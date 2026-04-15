@@ -110,6 +110,29 @@
     height: 60px;
   }
 
+  /* ---- Problem section: stack on mobile ---- */
+  .problem__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .problem__image-wrap {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .problem__image {
+    width: 100%;
+  }
+
+  .problem__text {
+    text-align: center;
+  }
+
+  .problem__text .section-cta {
+    justify-content: center;
+  }
+
   /* ---- All grids → single column ---- */
   .steps-grid,
   .benefits-grid,
@@ -169,6 +192,11 @@
     width: 360px;
     max-width: 80vw;
   }
+
+  /* ---- Thumbnail slider: smaller on mobile ---- */
+  .thumb-slider { padding: 12px 0; }
+  .thumb-slider__track img { height: 70px; }
+  .thumb-slider__track { gap: 14px; }
 
   /* ---- Stats bar ---- */
   .stats-bar {

@@ -241,8 +241,36 @@
   padding: var(--section-pad) 0;
 }
 
+.problem__grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.problem__image-wrap {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+}
+
+.problem__image {
+  display: block;
+  width: 340px;
+  height: auto;
+}
+
+.problem__text {
+  text-align: center;
+}
+
 .problem__headline {
   margin-bottom: var(--gap-lg);
+}
+
+.problem__text .section-cta {
+  justify-content: center;
 }
 
 .problem__body {
@@ -274,6 +302,7 @@
   line-height: var(--lh-body);
   color: var(--text-light);
 }
+
 
 
 /* ==========================================================================
@@ -392,25 +421,25 @@
 }
 
 .benefits-wrapper__orb--1 {
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(255, 180, 51, 0.12) 0%, transparent 70%);
-  top: -100px;
-  right: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 180, 51, 0.18) 0%, transparent 70%);
+  top: -120px;
+  right: -120px;
 }
 
 .benefits-wrapper__orb--2 {
-  width: 350px;
-  height: 350px;
-  background: radial-gradient(circle, rgba(255, 217, 153, 0.08) 0%, transparent 70%);
-  bottom: -80px;
-  left: -80px;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(255, 217, 153, 0.12) 0%, transparent 70%);
+  bottom: -100px;
+  left: -100px;
 }
 
 .benefits-wrapper__orb--3 {
-  width: 250px;
-  height: 250px;
-  background: radial-gradient(circle, rgba(255, 199, 102, 0.06) 0%, transparent 70%);
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 199, 102, 0.08) 0%, transparent 70%);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -435,31 +464,31 @@
   gap: 18px;
   padding: 56px 40px;
   border-radius: 16px;
-  border: 0.5px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   background:
-    radial-gradient(ellipse at top, rgba(255, 255, 255, 0.025) 0%, transparent 60%),
-    rgba(0, 0, 0, 0.3);
+    radial-gradient(ellipse at top, rgba(255, 255, 255, 0.06) 0%, transparent 55%),
+    rgba(255, 255, 255, 0.03);
   overflow: hidden;
   transition: transform 0.5s var(--ease-smooth),
               border-color 0.5s var(--ease-smooth),
               background 0.5s var(--ease-smooth);
 }
 
-/* Individual card top accent (small gold dash) */
+/* Individual card top accent (gold dash, wider + brighter like consulting.com) */
 .benefit-card::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 40px;
-  width: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
   height: 2px;
-  background: var(--gold-primary);
-  filter: blur(0.5px);
-  opacity: 0.9;
-  box-shadow: 0 0 8px rgba(255, 180, 51, 0.6);
+  background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+  opacity: 1;
+  box-shadow: 0 0 12px rgba(255, 180, 51, 0.7), 0 0 30px rgba(255, 180, 51, 0.3);
 }
 
-/* Subtle corner vignette on each card (radial at bottom-right like reference) */
+/* Corner vignette glow (radial at bottom-right like reference) */
 .benefit-card::after {
   content: '';
   position: absolute;
@@ -467,16 +496,16 @@
   right: -60px;
   width: 260px;
   height: 260px;
-  background: radial-gradient(circle, rgba(255, 180, 51, 0.04) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(255, 180, 51, 0.06) 0%, transparent 65%);
   pointer-events: none;
 }
 
 .benefit-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(255, 180, 51, 0.15);
+  border-color: rgba(255, 255, 255, 0.16);
   background:
-    radial-gradient(ellipse at top, rgba(255, 180, 51, 0.04) 0%, transparent 60%),
-    rgba(0, 0, 0, 0.3);
+    radial-gradient(ellipse at top, rgba(255, 255, 255, 0.08) 0%, transparent 55%),
+    rgba(255, 255, 255, 0.05);
 }
 
 .benefit-card__icon {
@@ -586,6 +615,42 @@
 
 .accordion__item:first-child {
   border-top: var(--border-subtle);
+}
+
+
+/* ==========================================================================
+   THUMBNAIL SLIDER — infinite auto-scroll
+   ========================================================================== */
+
+.thumb-slider {
+  background: var(--bg-near-black);
+  padding: 16px 0;
+  overflow: hidden;
+  position: relative;
+  /* Fade edges into the dark background */
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.thumb-slider__track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: thumb-scroll 40s linear infinite;
+}
+
+.thumb-slider__track img {
+  height: 90px;
+  width: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+  opacity: 0.85;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+@keyframes thumb-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 
